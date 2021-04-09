@@ -27,7 +27,8 @@ jobs:
       - uses: baileyjm02/markdown-to-pdf@v1
         with:
           input_dir: .
-          images_dir: img
+          images_dir: ./img/
+          output_dir: .
       # Commit and push
       - uses: EndBug/add-and-commit@v7.1.1
         with:
