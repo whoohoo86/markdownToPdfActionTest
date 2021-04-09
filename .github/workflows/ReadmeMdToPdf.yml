@@ -23,14 +23,12 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
-      
       # Converts 
       - uses: baileyjm02/markdown-to-pdf@v1
         with:
           input_dir: .
           images_dir: img
-          
-      - name: Add & Commit
+      # Commit and push
       - uses: EndBug/add-and-commit@v7.1.1
         with:
           message: 'adds/updates the auto generated README.pdf'
