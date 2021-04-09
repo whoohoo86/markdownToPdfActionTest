@@ -32,7 +32,7 @@ jobs:
           images_dir: /img
           build_html: false
       # Renames README.pdf to 'Dokumentation <reponame>.pdf'
-      - run: mv README.pdf "Dokumentation $GITHUB_REPOSITORY.pdf"
+      - run: mv README.pdf "Dokumentation $(echo "$GITHUB_REPOSITORY" | awk -F / '{print $2}').pdf"
       # Commit and push
       - uses: EndBug/add-and-commit@v7.1.1
         with:
