@@ -29,6 +29,7 @@ jobs:
           input_dir: .
           output_dir: .
           image_import: /img
+          images_dir: /img
       # Commit and push
       - uses: EndBug/add-and-commit@v7.1.1
         with:
