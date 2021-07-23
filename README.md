@@ -113,7 +113,7 @@ Try to put a blank line before...
 
 ### Internal
 
-![This is an internal image. This is so cool!](/img/internalImg.jpg "internal image")
+![This is an internal image. This is so cool!](/.github/pictures/internalImg.jpg "internal image")
 
 ### External
 
